@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/GymPro.Api/GymPro.Api.csproj" />
+    <Project Path="src/GymPro.Application/GymPro.Application.csproj" />
+    <Project Path="src/GymPro.Domain/GymPro.Domain.csproj" />
+    <Project Path="src/GymPro.Infrastructure/GymPro.Infrastructure.csproj" />
+  </Folder>
+</Solution>
