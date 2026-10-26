@@ -1,3 +1,5 @@
+using GymPro.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+var cadenaConexion = builder.Configuration.GetConnectionString("GymPro")
+    ?? throw new InvalidOperationException("Falta la cadena de conexión 'GymPro'.");
+
+builder.Services.AgregarInfraestructura(cadenaConexion);
 
 var app = builder.Build();
 

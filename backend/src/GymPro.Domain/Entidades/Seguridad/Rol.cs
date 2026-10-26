@@ -1,7 +1,4 @@
 ﻿using GymPro.Domain.Comun;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace GymPro.Domain.Entidades.Seguridad
 {
